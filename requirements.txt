@@ -4,8 +4,7 @@ numpy
 gymnasium
 stable_baselines3
 torch
-sklearn.manifold
+sklearn
 matplotlib.pyplot
 seaborn
 spacy
-torch.utils.data
