@@ -4,7 +4,6 @@ numpy
 gymnasium
 stable_baselines3
 torch
-torch.nn.functional
 sklearn.manifold
 matplotlib.pyplot
 seaborn
