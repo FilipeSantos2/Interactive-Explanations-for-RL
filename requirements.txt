@@ -4,7 +4,6 @@ numpy
 datetime
 gymnasium
 stable_baselines3
-json
 torch
 torch.nn.functional
 sklearn.manifold
