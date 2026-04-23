@@ -2,8 +2,8 @@ streamlit
 pandas
 numpy
 gymnasium
-stable_baselines3
-torch
+stable_baselines3==2.4.0
+torch==1.13.0
 scikit-learn
 matplotlib
 seaborn
