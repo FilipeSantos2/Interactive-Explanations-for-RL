@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+datetime
+gymnasium
+stable_baselines3
+json
+torch
+torch.nn.functional
+sklearn.manifold
+matplotlib.pyplot
+seaborn
+collections
+spacy
+torch.utils.data

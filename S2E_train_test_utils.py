@@ -4,7 +4,6 @@ import S2E_data_utils as data_utils
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt 
 import seaborn as sn
-import colorcet as cc
 
 def get_masks(x_state, x_explanation):
     mask_state = x_state.ne(99)
