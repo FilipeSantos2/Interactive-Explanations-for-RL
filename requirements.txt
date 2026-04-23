@@ -5,6 +5,6 @@ gymnasium
 stable_baselines3
 torch
 scikit-learn
-matplotlib.pyplot
+matplotlib
 seaborn
 spacy
