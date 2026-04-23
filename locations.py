@@ -1,0 +1,98 @@
+import datetime
+
+class Locations():
+    locations = ["Sines", "Porto", "Lisboa", "Coimbra", "Mealhada", "Aveiro", "Guarda", "Algarve", "Cascais"]
+
+    locations_lat_lon = {"Sines":[37.947611629254325, -8.85736753646822], "Porto":[41.1600480594642, -8.641414379612034], "Lisboa":[38.72548203063015, -9.155464730613916], "Coimbra":[40.18724539148289, -8.402569395290355], "Mealhada":[40.36429151714306, -8.438366690266221], "Aveiro":[40.63837746770617, -8.657931439312907], "Guarda":[40.53200033118474, -7.246770317244965], "Algarve":[37.1146231880738, -8.248498852128717], "Cascais":[38.71232671925564, -9.365145795786791]}
+
+    distance_time_matrix = {
+        ("Sines", "Sines"):[0, datetime.time(0)], 
+        ("Sines", "Porto"):[456, datetime.time(4, 18)], 
+        ("Sines", "Lisboa"):[170, datetime.time(1, 50)], 
+        ("Sines", "Coimbra"):[324, datetime.time(3, 5)], 
+        ("Sines", "Mealhada"):[372, datetime.time(3, 36)], 
+        ("Sines", "Aveiro"):[389, datetime.time(3, 43)], 
+        ("Sines", "Guarda"):[422, datetime.time(4, 26)], 
+        ("Sines", "Algarve"):[142, datetime.time(1, 58)], 
+        ("Sines", "Cascais"):[223, datetime.time(2, 15)], 
+        
+        ("Porto", "Sines"):[434, datetime.time(4, 2)], 
+        ("Porto", "Porto"):[0, datetime.time(0)], 
+        ("Porto", "Lisboa"):[319, datetime.time(3, 2)], 
+        ("Porto", "Coimbra"):[129, datetime.time(1, 24)], 
+        ("Porto", "Mealhada"):[105, datetime.time(1, 10)], 
+        ("Porto", "Aveiro"):[71.9, datetime.time(0, 53)], 
+        ("Porto", "Guarda"):[272, datetime.time(2, 48)], 
+        ("Porto", "Algarve"):[532, datetime.time(4, 42)], 
+        ("Porto", "Cascais"):[333, datetime.time(3, 13)], 
+        
+        ("Lisboa", "Sines"):[160, datetime.time(2, 12)], 
+        ("Lisboa", "Porto"):[313, datetime.time(2, 57)], 
+        ("Lisboa", "Lisboa"):[0, datetime.time(0)], 
+        ("Lisboa", "Coimbra"):[205, datetime.time(2, 8)], 
+        ("Lisboa", "Mealhada"):[226, datetime.time(2, 14)], 
+        ("Lisboa", "Aveiro"):[267, datetime.time(2, 33)], 
+        ("Lisboa", "Guarda"):[361, datetime.time(3, 39)], 
+        ("Lisboa", "Algarve"):[263, datetime.time(3, 19)], 
+        ("Lisboa", "Cascais"):[23.2, datetime.time(0, 28)], 
+        
+        ("Coimbra", "Sines"):[328, datetime.time(3, 9)], 
+        ("Coimbra", "Porto"):[133, datetime.time(1, 28)], 
+        ("Coimbra", "Lisboa"):[210, datetime.time(2, 3)], 
+        ("Coimbra", "Coimbra"):[0, datetime.time(0)], 
+        ("Coimbra", "Mealhada"):[34, datetime.time(0, 33)], 
+        ("Coimbra", "Aveiro"):[83.1, datetime.time(1, 11)], 
+        ("Coimbra", "Guarda"):[142, datetime.time(2, 9)], 
+        ("Coimbra", "Algarve"):[410, datetime.time(3, 39)], 
+        ("Coimbra", "Cascais"):[227, datetime.time(2, 12)], 
+
+        ("Mealhada", "Sines"):[344, datetime.time(3, 15)], 
+        ("Mealhada", "Porto"):[115, datetime.time(1, 19)], 
+        ("Mealhada", "Lisboa"):[227, datetime.time(2, 14)], 
+        ("Mealhada", "Coimbra"):[30.7, datetime.time(0, 35)], 
+        ("Mealhada", "Mealhada"):[0, datetime.time(0)], 
+        ("Mealhada", "Aveiro"):[45.9, datetime.time(0, 52)], 
+        ("Mealhada", "Guarda"):[188, datetime.time(1, 55)], 
+        ("Mealhada", "Algarve"):[422, datetime.time(3, 47)], 
+        ("Mealhada", "Cascais"):[249, datetime.time(2, 28)], 
+
+        ("Aveiro", "Sines"):[389, datetime.time(3, 44)], 
+        ("Aveiro", "Porto"):[73.5, datetime.time(0, 50)], 
+        ("Aveiro", "Lisboa"):[261, datetime.time(2, 32)], 
+        ("Aveiro", "Coimbra"):[67.8, datetime.time(0, 59)], 
+        ("Aveiro", "Mealhada"):[48.3, datetime.time(0, 40)], 
+        ("Aveiro", "Aveiro"):[0, datetime.time(0)], 
+        ("Aveiro", "Guarda"):[157, datetime.time(1, 49)], 
+        ("Aveiro", "Algarve"):[475, datetime.time(4, 14)], 
+        ("Aveiro", "Cascais"):[302, datetime.time(2, 58)], 
+
+        ("Guarda", "Sines"):[438, datetime.time(4, 1)], 
+        ("Guarda", "Porto"):[204, datetime.time(1, 59)], 
+        ("Guarda", "Lisboa"):[330, datetime.time(3, 14)], 
+        ("Guarda", "Coimbra"):[144, datetime.time(2, 11)], 
+        ("Guarda", "Mealhada"):[187, datetime.time(1, 53)], 
+        ("Guarda", "Aveiro"):[163, datetime.time(1, 49)], 
+        ("Guarda", "Guarda"):[0, datetime.time(0)], 
+        ("Guarda", "Algarve"):[493, datetime.time(4, 47)], 
+        ("Guarda", "Cascais"):[380, datetime.time(3, 54)], 
+
+        ("Algarve", "Sines"):[144, datetime.time(2, 1)], 
+        ("Algarve", "Porto"):[525, datetime.time(4, 36)], 
+        ("Algarve", "Lisboa"):[281, datetime.time(2, 34)], 
+        ("Algarve", "Coimbra"):[409, datetime.time(3, 42)], 
+        ("Algarve", "Mealhada"):[422, datetime.time(3, 47)], 
+        ("Algarve", "Aveiro"):[474, datetime.time(4, 14)], 
+        ("Algarve", "Guarda"):[494, datetime.time(4, 50)], 
+        ("Algarve", "Algarve"):[0, datetime.time(0)], 
+        ("Algarve", "Cascais"):[286, datetime.time(2, 30)], 
+
+        ("Cascais", "Sines"):[180, datetime.time(2, 33)], 
+        ("Cascais", "Porto"):[335, datetime.time(3, 8)], 
+        ("Cascais", "Lisboa"):[23.6, datetime.time(0, 29)], 
+        ("Cascais", "Coimbra"):[227, datetime.time(2, 13)], 
+        ("Cascais", "Mealhada"):[248, datetime.time(2, 24)], 
+        ("Cascais", "Aveiro"):[305, datetime.time(3, 0)], 
+        ("Cascais", "Guarda"):[384, datetime.time(3, 53)], 
+        ("Cascais", "Algarve"):[249, datetime.time(2, 20)], 
+        ("Cascais", "Cascais"):[0, datetime.time(0)]
+        }
