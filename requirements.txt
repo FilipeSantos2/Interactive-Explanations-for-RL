@@ -4,7 +4,7 @@ numpy
 gymnasium
 stable_baselines3
 torch
-sklearn
+scikit-learn
 matplotlib.pyplot
 seaborn
 spacy
