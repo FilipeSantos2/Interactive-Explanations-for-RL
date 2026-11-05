@@ -2,6 +2,7 @@
 
 ## Links
 Interactive version: https://explanationstruckfreightinteractive.streamlit.app/
+
 Static version: https://explanationstruckfreightstatic.streamlit.app/
 
 ## Title
